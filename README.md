@@ -65,6 +65,8 @@ const SafeSrcDocIframe  = window.SafeSrcDocIframe;
 
 ## Usage Example 📝
 
+> ▶️ [Try it out on CodeSandbox!](https://codesandbox.io/s/2z4nk0nq4j)
+
 ```jsx
 import React from 'react';
 import SafeSrcDocIframe from 'react-safe-src-doc-iframe';

@@ -8,7 +8,7 @@
   "module": "es/safe-src-doc-iframe.js",
   "scripts": {
     "lint": "eslint --fix --ext jsx --ext js src/",
-    "test": "NODE_ENV=test npm run lint && jest src/",
+    "test": "npm run lint && NODE_ENV=test jest src/",
     "build:dev": "BABEL_ENV=umd webpack --config webpack.dev.config.js",
     "build:dist": "BABEL_ENV=umd webpack --config webpack.prod.config.js",
     "build:es": "BABEL_ENV=es babel src --out-dir es --source-maps inline",

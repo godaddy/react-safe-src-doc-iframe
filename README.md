@@ -1,6 +1,6 @@
 # React Safe Srcdoc Iframe
 
-> A component which applies guards to srcdoc iframes in order to provide a predictable and safe experience to the user. Compliments the `sandbox` native iframe attribute.
+> A component which applies guards to srcdoc iframes in order to provide a predictable and safe experience to the user. Complements the `sandbox` native iframe attribute.
 
 <p align="center">
   <img src="assets/react-safe-src-doc-iframe-logo.png" width="300"/>

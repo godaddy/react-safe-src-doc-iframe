@@ -12,7 +12,8 @@
     "build:dev": "BABEL_ENV=umd webpack --config webpack.dev.config.js",
     "build:dist": "BABEL_ENV=umd webpack --config webpack.prod.config.js",
     "build:es": "BABEL_ENV=es babel src --out-dir es --source-maps inline",
-    "build-all": "npm run build:dev && npm run build:dist && npm run build:es"
+    "build-all": "npm run build:dev && npm run build:dist && npm run build:es",
+    "prepublishOnly": "npm run build-all"
   },
   "files": [
     "src",

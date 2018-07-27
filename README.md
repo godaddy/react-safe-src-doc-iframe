@@ -14,7 +14,7 @@
 - [Install](#install)
   - [Import Examples](#import-examples)
 - [Usage Example](#usage-example-)
-- [Component Props](#component-props-)
+- [Component Props](#component-props)
   - [referrerPolicy](#referrerpolicy)
   - [sandbox](#sandbox)
   - [srcDoc](#srcdoc)

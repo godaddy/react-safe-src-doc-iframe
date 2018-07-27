@@ -1,0 +1,68 @@
+{
+  "name": "react-safe-src-doc-iframe",
+  "version": "1.0.0",
+  "description": "A component which applies guards to srcdoc iframes, providing a predictable and safe experience to the user.",
+  "license": "MIT",
+  "main": "dist/safe-src-doc-iframe.js",
+  "browser": "dist/safe-src-doc-iframe.js",
+  "module": "es/safe-src-doc-iframe.js",
+  "scripts": {
+    "lint": "eslint --fix --ext jsx --ext js src/",
+    "test": "NODE_ENV=test npm run lint && jest src/",
+    "build:dev": "BABEL_ENV=umd webpack --config webpack.dev.config.js",
+    "build:dist": "BABEL_ENV=umd webpack --config webpack.prod.config.js",
+    "build:es": "BABEL_ENV=es babel src --out-dir es --source-maps inline",
+    "build-all": "npm run build:dev && npm run build:dist && npm run build:es"
+  },
+  "files": [
+    "src",
+    "dist",
+    "es"
+  ],
+  "keywords": [
+    "react",
+    "react component",
+    "component",
+    "iframe",
+    "safety",
+    "safe guards",
+    "srcdoc",
+    "library"
+  ],
+  "author": "GoDaddy Operating Company, LLC",
+  "contributors": [
+    "Mayank Jethva <mjethva@godaddy.com>",
+    "Srinath Ganesan <sganesan@godaddy.com>",
+    "Brandon Kidd <bkidd@godaddy.com>"
+  ],
+  "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>setup-tests.js"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "^5.1.0",
+    "eslint-config-godaddy-react": "^2.2.1",
+    "eslint-plugin-json": "^1.2.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-mocha": "^5.1.0",
+    "eslint-plugin-react": "^7.10.0",
+    "jest": "^23.4.1",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.0.8"
+  },
+  "peerDependencies": {
+    "prop-types": ">= 15.0.0",
+    "react": ">= 15.0.0"
+  }
+}

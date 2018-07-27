@@ -1,0 +1,14 @@
+{
+  "env": {
+    "node": true,
+    "es6": true,
+    "jest": true,
+    "browser": true
+  },
+  "parser": "babel-eslint",
+  "extends": ["godaddy-react"],
+  "plugins": ["jsx-a11y"],
+  "rules": {
+    "jsx-a11y/iframe-has-title": "error"
+  }
+}

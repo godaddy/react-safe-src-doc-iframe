@@ -1,0 +1,24 @@
+{
+  "env": {
+    "umd": {
+      "presets": ["env", "react"],
+      "plugins": ["transform-object-rest-spread", "transform-class-properties"]
+    },
+    "es": {
+      "presets": [
+        [
+          "env",
+          {
+            "modules": false
+          }
+        ],
+        "react"
+      ],
+      "plugins": ["transform-object-rest-spread", "transform-class-properties"]
+    },
+    "test": {
+      "presets": ["env", "react"],
+      "plugins": ["transform-object-rest-spread", "transform-class-properties"]
+    }
+  }
+}
